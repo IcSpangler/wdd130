@@ -97,9 +97,10 @@ h1{
   padding: 0.5rem;
 }
 .purpose h2 {
-  margin: auto;
-  padding-left: 1rem;
+  margin: 10;
+  padding:1rem;
 }
+
 .history h2 {
   margin: 1rem
 }
@@ -109,7 +110,7 @@ h1{
 
 /* History article Styles */
 .history {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 50%;
   height: 50%;
   color: #000;

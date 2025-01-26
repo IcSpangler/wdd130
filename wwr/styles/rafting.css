@@ -90,15 +90,14 @@ h1{
 
 }
 .purpose p{
-  color:var(--accent1-color);
-  font-style: oblique;
+  color:black;
+  font-family: "Merriweather", serif; 
   font-size: x-large;
   margin-left: 0.5rem;
   padding: 0.5rem;
-  
 }
 .purpose h2 {
-  margin: 0;
+  margin: auto;
   padding-left: 1rem;
 }
 .history h2 {
@@ -117,7 +116,7 @@ h1{
   position: relative;
   top: auto;
   padding: 1rem;
-  font-size: medium
+  font-size:large
 }
 
 .history p{

@@ -49,14 +49,14 @@ h1 {
 
 /* Purpose Section */
 .purpose {
-  background-color: var(--primary-color, #e3f2fd);
+  background-color: var(--primary-color,);
   width: 100%;
   padding: 2rem;
   color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
   text-align: left;
 }
 
@@ -68,7 +68,7 @@ h1 {
 
 .purpose p {
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 /* Adventure Section */
@@ -84,13 +84,13 @@ h1 {
 
 .adventure h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .adventure p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--text-color, #555);
+  font-size: 2rem;
+  line-height: 6rem;
+  color: var(--text-color,);
 }
 /* Footer Styles */
 footer {

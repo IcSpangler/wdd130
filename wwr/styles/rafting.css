@@ -19,14 +19,58 @@ body {
   text-align: center;
   background-color: var(--accent2-color); 
 }
-.hero{
-  text-align: center;
-  position: relative;
+
+.nav a:hover {
+  text-decoration: underline;
 }
-.hero img {
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
   width: 100%;
-  height: auto;
+  max-height: 400px;
   object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-article {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-article-img {
+  float: right;
+  margin-left: 1rem;
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero-article p {
+  color: #fff;
+  overflow: hidden;
 }
 /* Header Section */
 header{
@@ -36,12 +80,9 @@ header{
   font-weight: 300; 
   font-stretch: 100%;
   padding: 5rem;
-}
-a{
-  color:var(--accent1-color);
-  text-decoration: none;
-  font-size: large;
-}
+  align-items: center;
+  color: var(--text-color);
+  padding: 5rem;}
 
 .logo img {
   width: 200px;
@@ -49,10 +90,10 @@ a{
 }
 
 /* Main Title */
-h1 {
+.h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-color, #333); 
+  margin-bottom: 3rem;
+  color: white; 
 }
 
 /* Purpose Section */
@@ -69,9 +110,11 @@ h1 {
 }
 
 .purpose img {
-  max-width: 200px;
+  max-width: 150px;
   margin: 2px;
   border-radius: 8px; 
+
+
 }
 
 .purpose p {
@@ -111,4 +154,14 @@ footer {
 footer img{
   width: 40px;
   padding-top: 10px;
+}
+/* Social Media Links */
+.social-icons a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
 }

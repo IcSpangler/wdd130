@@ -9,21 +9,38 @@
     --aside-border-color: rgba(0,0,0,0.2);
     --footer-border-color: #000;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Bar */
 nav{
-    background-color: var(--nav-bg-color);
-    padding: 20x;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a{
     color: var(--nav-text-color);
     display: block;
-    padding: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
+/* Header */
 h1{
    color: var(--h1-color);
+   border-bottom: 1px solid var(--nav-bg-color);
+   text-align: left;
+   margin: 1rem;
 }
 
+/* Images */
 img{
     width: 120px;
     height: auto;
@@ -32,13 +49,18 @@ img{
     box-shadow: var(--img-box-shadow);
 
 }
-
-p{
-    padding: 20px;
+/* Floated Profile Image */
+.profile-img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 
-main {
-    max-width: 840px;
+/* Paragraphs */
+p{
+    padding: 20px;
 }
 
 aside{
@@ -49,6 +71,7 @@ aside{
     background-color: var(--aside-bg-color);
     color: var(--aside-text-color);
     text-align: center;
+    position: relative;
 }
 
 aside img{
@@ -74,4 +97,8 @@ footer{
     background-color: #ddd;
     color: #000;
     border: 1px; 
+}
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }

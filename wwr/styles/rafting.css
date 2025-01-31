@@ -162,7 +162,7 @@ body {
   font-weight: bold ; 
   text-align: center;
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: 30px;
 }
 .content {
   display: flex;
@@ -170,6 +170,7 @@ body {
 }
 .text-block {
   flex: 1;
+  font-size: 15px;
 }
 .image-block {
   flex: 1;
@@ -178,30 +179,46 @@ body {
   align-items: center;
 }
 .image-block img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 
 /* Adventure Section */
+
 .adventure {
-  margin: 2rem 0;
-  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  gap: 20px;
+  padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: auto;
+  margin: auto;
+}
+.adventure h3{
   text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 0; 
 }
 
-.adventure h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+.adventure figure {
+  margin: 0; 
+  text-align: center; 
 }
 
-.adventure p {
-  font-size: 2rem;
-  line-height: 6rem;
-  color: var(--text-color,);
+.adventure img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.adventure figcaption {
+  font-size: small;
+  margin-top: 10px;
+  color: #333;
 }
 /* Footer Styles */
 footer {

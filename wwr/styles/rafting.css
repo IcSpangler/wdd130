@@ -201,7 +201,7 @@ body {
   align-items: center;    /* Center-align content horizontally */
   justify-content: flex-start; 
   gap: 20px; 
-  padding: auto;
+  padding: 20px;
   margin: auto;
   margin-bottom: 2rem;
 }
@@ -214,21 +214,19 @@ body {
 .figure-row {
   display: flex;
   flex-direction: wrap;
-  gap: 15px; 
+  gap: 10px; 
   justify-content: center; 
   margin-bottom: 2rem;
-  max-width: 100%;
 }
 
 .adventure figure {
   margin: 0; 
   text-align: center; 
-  max-width: 100%;
 }
 
 .adventure img {
-  width: 200px;
-  max-width: 100%;
+  width: 150px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -238,24 +236,27 @@ body {
   color: #333;
 }
 /* Footer Styles */
-footer {
-  background-color: var(--accent2-color);
-  color: var(--accent1-color);
-  padding: 20px 0;
-  text-align: center;
-}
 
-footer img{
-  width: 40px;
-  padding-top: 10px;
-}
-/* Social Media Links */
-.social-icons a {
-  text-decoration: none;
-  margin: 0 0.5rem;
+.container-footer{
+  width: auto;
+  max-width: auto;
+  height: 100px;
+  background-color: white;
+  padding: 20px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-icons img {
-  width: 32px;
-  height: 32px;
+  width: 80px;
+  height: 30px;
+  gap: 20px;
+  border: 1px solid #333;     
+  background-color: #f4f4f4;  
+  text-align: right;        
+  margin: 2px auto;
+  
 }

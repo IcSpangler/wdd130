@@ -11,35 +11,34 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none
+  list-style-type: none;
+
 }
 /* Header Section */
-header{
-  background-color: var(--accent2-color);
-  text-align: center;
-  font-family: "Merriweather", serif; 
-  font-weight: 300; 
-  font-stretch: 100%;
-  padding: 5rem;
+.header-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: var(--text-color);
-  display: grid;
-  grid-template-columns: auto 1fr;  
-  align-items: center;              
-  padding: 10px 20px; 
-  
+  padding: 20px;
+  background-color: #ffff; 
+  border: 2px solid #ccc; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .nav{
-  border: 2px solid #333;     /* Add border */
-  background-color: #f4f4f4;  /* Background color */
-  text-align: center;         /* Center text */
-  font-size: 18px;            /* Adjust font size */
-  font-weight: bold;          /* Make text bold */
+  border: 1.5px solid #333;   
+  background-color: var(--accent1-color);  
+  text-align: center;       
+  font-size: 18px;    
+  font-weight: bold;         
   margin: 20px auto;
   
+}.nav a{
+  text-align: center;
+  color: white;
+  border-right: 1.6px solid #000; /* Adds a line to the right of each link */
 }
-
 .nav ul {
   display: flex;
   gap: 10px;
@@ -244,7 +243,7 @@ body {
   height: 100px;
   background-color: white;
   padding: 20px;
-  margin: 1em;
+  margin-top: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +256,6 @@ body {
   gap: 20px;
   border: 1px solid #333;     
   background-color: #f4f4f4;  
-  text-align: right;        
   margin: 2px auto;
   
 }

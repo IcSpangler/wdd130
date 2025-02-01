@@ -189,16 +189,11 @@ body {
 /* Adventure Section */
 
 .adventure {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-  gap: 20px;
-  padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: auto;
-  margin-bottom: 20px;
+  margin: auto;
 }
 .container {
   display: flex;
@@ -208,31 +203,32 @@ body {
   gap: 20px; 
   padding: auto;
   margin: auto;
+  margin-bottom: 2rem;
 }
-.adventure h3{
-  text-align: center;
+
+.title {
+  text-align: center; 
   margin: 2rem; 
 }
 
 .figure-row {
   display: flex;
-  flex-direction: row; /* Keep photos in a single row */
+  flex-direction: wrap;
   gap: 15px; 
   justify-content: center; 
   margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  max-width: 100%;
 }
-
 
 .adventure figure {
   margin: 0; 
   text-align: center; 
+  max-width: 100%;
 }
 
 .adventure img {
   width: 200px;
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
 }
 

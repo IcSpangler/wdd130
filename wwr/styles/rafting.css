@@ -198,14 +198,32 @@ body {
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: auto;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column; /* Stack title and row of photos vertically */
+  align-items: center;    /* Center-align content horizontally */
+  justify-content: flex-start; 
+  gap: 20px; 
+  padding: auto;
   margin: auto;
 }
 .adventure h3{
   text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
-  padding: 0; 
+  margin: 2rem; 
 }
+
+.figure-row {
+  display: flex;
+  flex-direction: row; /* Keep photos in a single row */
+  gap: 15px; 
+  justify-content: center; 
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 
 .adventure figure {
   margin: 0; 
@@ -213,8 +231,8 @@ body {
 }
 
 .adventure img {
-  width: 100%;
-  max-width: 300px;
+  width: 200px;
+  max-width: 200px;
   height: auto;
 }
 

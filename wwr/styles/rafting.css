@@ -54,7 +54,7 @@ header{
   max-height: 300px;
 }
 
-.logo h1 {
+.logo h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--accent1-color);

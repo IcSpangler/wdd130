@@ -22,6 +22,7 @@
   padding: 20px;
   background-color: white;
   border-bottom: 2px solid #ccc;
+  margin-bottom: 2rem;
 }
 
 .nav{
@@ -35,7 +36,7 @@
 }.nav a{
   text-align: center;
   color: white;
-  border-right: 1.6px solid #000; /* Adds a line to the right of each link */
+  border-right: 1.6px solid #000; 
 }
 .nav ul {
   display: flex;
@@ -46,14 +47,19 @@
 }
 
 /* logo + title */
+
 .logo img {
   width: 150px;
   max-height: 300px;
+  display: flex;
+  align-items: center;
+  margin-left: 6rem;
 }
 
 .logo h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  margin-left: 3rem;
   color: var(--accent1-color);
 }
 /* Main Title */
@@ -235,25 +241,17 @@ body {
 }
 /* Footer Styles */
 
-.container-footer{
-  width: auto;
-  max-width: 100%;
-  height: 100px;
-  background-color: white;
-  padding: 20px;
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 10px;
+  padding: 20px;
+  background: white;
+  color: var(--accent1-color);
+  margin-top: 20px;
+  margin-bottom: 2rem;
 }
-
 .social-icons img {
-  width: 80px;
-  height: 30px;
-  gap: 20px;
-  border: 1px solid #333;     
-  background-color: #f4f4f4;  
-  margin: 2px auto;
-  
+  color: black;
+  width: 2rem;
 }

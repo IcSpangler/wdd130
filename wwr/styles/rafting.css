@@ -1,261 +1,83 @@
 :root {
   --primary-color: #F49F0A; 
-  --secondary-color: #EFCA08 ; 
+  --secondary-color: #EFCA08; 
   --accent1-color: #0A6A6E; 
   --accent2-color: #BBDEF0; 
   --text-color: black; 
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none;
-
 }
-/* Header Section */
+/* Header with CSS Grid */
 .header-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 20px;
-  background-color: #ffff; 
-  border: 2px solid #ccc; 
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  background-color: white;
+  border-bottom: 2px solid #ccc;
 }
-
-.nav{
-  border: 1.5px solid #333;   
-  background-color: var(--accent1-color);  
-  text-align: center;       
-  font-size: 18px;    
-  font-weight: bold;         
-  margin: 20px auto;
-  
-}.nav a{
-  text-align: center;
-  color: white;
-  border-right: 1.6px solid #000; /* Adds a line to the right of each link */
-}
-.nav ul {
+.nav {
   display: flex;
-  gap: 10px;
-  text-align: center; 
-  padding: 1px;
-  margin: auto
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--accent1-color);
+  padding: 10px;
+  border-radius: 5px;
 }
-
-/* logo + title */
+.nav a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-right: 1.6px solid white;
+}
+.nav a:last-child {
+  border-right: none;
+}
 .logo img {
   width: 150px;
-  max-height: 300px;
 }
-
-.logo h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--accent1-color);
-}
-/* Main Title */
-.h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: white; 
-}
-
-body {
-  font-family: "Merriweather", serif;
-  margin: auto;
-  max-width: 1200px;
-  text-align: center;
-  background-color: var(--accent2-color); 
-}
-
-.nav a:hover {
-  text-decoration: none;
-}
-
-/* Hero Section */
+/* Page Layout Matching Wireframe */
 .hero {
-  position: relative;
   text-align: center;
-  color: #fff;
   margin-bottom: 2rem;
 }
-
 .hero-img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
 }
-
-.hero h1 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.hero-article {
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border-radius: 8px;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.hero-article-img {
-  float: right;
-  margin-left: 1rem;
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.hero-article p {
-  color: #fff;
-  overflow: hidden;
-}
-
-/* Purpose Section */
-.purpose {
-  background-color: var(--primary-color,);
-  width: 100%;
-  padding: 2rem;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  text-align: left;
-}
-
-.purpose img {
-  max-width: 150px;
-  margin: 2px;
-  border-radius: 8px; 
-}
-
-.purpose p {
-  font-size: 1.2rem;
-  line-height: 1.75;
-}
-
-/*history section*/
-.container {
-  max-width: 100%;
+.history, .adventure {
+  max-width: 1200px;
   margin: auto;
-  background: white;
   padding: 20px;
-  border: 1px solid #ccc;
+  background: white;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.history h2{
-  font-family: "Merriweather", serif; 
-  font-weight: bold ; 
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-.content {
-  display: flex;
-  gap: 20px;
-}
-.text-block {
-  flex: 1;
-  font-size: 15px;
-}
-.image-block {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.image-block img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Adventure Section */
-
-.adventure {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  margin: auto;
-}
-.container {
-  display: flex;
-  flex-direction: column; /* Stack title and row of photos vertically */
-  align-items: center;    /* Center-align content horizontally */
-  justify-content: flex-start; 
-  gap: 20px; 
-  padding: 20px;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-
-.title {
-  text-align: center; 
-  margin: 2rem; 
-}
-
 .figure-row {
   display: flex;
-  flex-direction: row;
-  gap: 10px; 
-  justify-content: center; 
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
-
-.adventure figure {
-  margin: 0; 
-  text-align: center; 
+.figure-row figure {
+  text-align: center;
 }
-
-.adventure img {
+.figure-row img {
   width: 150px;
-  max-width: 300px;
   height: auto;
+  border-radius: 5px;
 }
-
-.adventure figcaption {
-  font-size: small;
-  margin-top: 10px;
-  color: #333;
-}
-/* Footer Styles */
-
-.container-footer{
-  width: auto;
-  max-width: 100%;
-  height: 100px;
-  background-color: white;
+footer {
+  text-align: center;
   padding: 20px;
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-icons img {
-  width: 80px;
-  height: 30px;
-  gap: 20px;
-  border: 1px solid #333;     
-  background-color: #f4f4f4;  
-  margin: 2px auto;
-  
+  background: var(--accent1-color);
+  color: white;
+  margin-top: 20px;
 }

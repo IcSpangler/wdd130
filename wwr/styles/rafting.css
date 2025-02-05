@@ -16,14 +16,12 @@
 }
 /* Header Section */
 .header-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 20px;
-  background-color: #ffff; 
-  border: 2px solid #ccc; 
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  background-color: white;
+  border-bottom: 2px solid #ccc;
 }
 
 .nav{

@@ -81,21 +81,22 @@ body {
   text-decoration: none;
 }
 
+/* Home Page Styles */
 /* Hero Section */
-.hero {
+.home-page .hero {
   position: relative;
   text-align: center;
   color: #fff;
   margin-bottom: 2rem;
 }
 
-.hero-img {
+.home-page .hero-img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
 }
 
-.hero h1 {
+.home-page .hero h1 {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -104,7 +105,7 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.hero-article {
+.home-page .hero-article {
   position: absolute;
   bottom: 30%;
   left: 50%;
@@ -117,7 +118,7 @@ body {
   align-items: center;
 }
 
-.hero-article-img {
+.home-page .hero-article-img {
   float:left;
   margin-left: 2rem;
   width: 150px;
@@ -125,7 +126,7 @@ body {
   border-radius: 8px;
 }
 
-.hero-article p {
+.home-page .hero-article p {
   color: #fff;
   overflow: hidden;
 }
@@ -234,18 +235,12 @@ body {
   height: auto;
 }
 
-.adventure figcaption {
+.figcaption {
   font-size: small;
   margin-top: 10px;
   color: #333;
 }
 
-/*Employees*/
-.employee-profiles{
-  width: 150px;
-  max-width: 300px;
-  height: auto;
-}
 /* Footer Styles */
 
 footer {
@@ -261,4 +256,43 @@ footer {
 .social-icons img {
   color: black;
   width: 2rem;
+}
+
+/*Contact Us page*/
+.location-container {
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top:2rem;
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.content {
+display: flex;
+justify-content: center;
+padding: 1rem;
+}
+
+.text-block{
+  font-size: large;
+  gap:10px;
+}
+
+.team-figure-row{
+  display: flex;
+  flex-direction: row;
+  gap: 10px; 
+  justify-content: center; 
+  margin-bottom: 2rem;
+
+}
+.team-figure-row img{
+  width: 300px;
+  max-width: 300px;
+  height: 200px;
+  gap: 10px;
 }

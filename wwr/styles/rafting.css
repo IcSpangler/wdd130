@@ -259,6 +259,23 @@ footer {
 }
 
 /*Contact Us page*/
+.contact-header {
+  padding: 40px;
+  background: #fff;
+}
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.contact-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
 .location-container {
   max-width: 100%;
   margin: auto;
@@ -281,18 +298,26 @@ padding: 1rem;
   font-size: large;
   gap:10px;
 }
-
-.team-figure-row{
-  display: flex;
-  flex-direction: row;
-  gap: 10px; 
-  justify-content: center; 
+ 
+.team-container{
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top:2rem;
   margin-bottom: 2rem;
-
+  font-size: 15px;
 }
-.team-figure-row img{
-  width: 300px;
-  max-width: 300px;
-  height: 200px;
-  gap: 10px;
+
+.team-member {
+  margin-bottom: 20px;
+}
+.team-member img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  display: block;
+
 }

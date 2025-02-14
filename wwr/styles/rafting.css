@@ -44,6 +44,7 @@
   text-align: center; 
   padding: 1px;
   margin: auto
+  
 }
 
 /* logo + title */
@@ -83,7 +84,7 @@ body {
 
 /* Home Page Styles */
 /* Hero Section */
-.home-page .hero {
+.hero {
   position: relative;
   text-align: center;
   color: #fff;
@@ -96,7 +97,7 @@ body {
   object-fit: cover;
 }
 
-.home-page .hero h1 {
+.hero h1 {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -133,7 +134,7 @@ body {
 
 /* Purpose Section */
 .purpose {
-  background-color: var(--primary-color,);
+  background-color: var(--primary-color);
   width: 100%;
   padding: 2rem;
   color: #000;
@@ -260,8 +261,8 @@ footer {
 
 /*Contact Us page*/
 .contact-header {
-  padding: 40px;
-  background: #fff;
+  padding: 30px;
+  background:var(--primary-color)
 }
 .contact-options {
   display: flex;
@@ -271,21 +272,59 @@ footer {
 }
 .contact-box {
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 300px;
 }
-.location-container {
-  max-width: 100%;
+.location-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa; /* Cor de fundo suave */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1200px;
   margin: auto;
+}
+
+.location-info {
+  flex: 1;
+  padding: 2rem;
   background: white;
-  padding: 20px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top:2rem;
-  margin-bottom: 2rem;
-  font-size: 15px;
+}
+
+.location-info h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #333;
+}
+
+.location-info h3 {
+  font-size: 1.rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.location-info p {
+  font-size: 0.8rem;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.map-container {
+  flex: 1;
+  height: 300px;
+  margin-left: 2rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
 }
 
 .content {
@@ -312,12 +351,129 @@ padding: 1rem;
 }
 
 .team-member {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre imagem e texto */
+  margin-bottom: 20px; /* Espaço entre os membros */
+  margin-top: 2rem;
+}
+
+.team-member img {
+  width: 300px; /* Ajuste conforme necessário */
+  height: auto;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+/* Alterna as direções */
+.team-member:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.team-member:nth-child(even) {
+  flex-direction: row;
+}
+.team-member figcaption {
+  font-size: 16px; /* Define um tamanho de fonte legível */
+  color: #333; /* Cor escura para melhor leitura */
+  margin-top: 10px; /* Espaçamento entre a imagem e a legenda */
+  font-style: italic; /* Dá um efeito elegante à legenda */
+}
+
+/* Call to Action Section */
+.call-to-action {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  color: white;
+}
+
+.call-to-action .container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.call-to-action .title {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
   margin-bottom: 20px;
 }
-.team-member img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  display: block;
 
+.cta-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #ff6600;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #cc5500;
+}
+
+/* Grid Layout for Trip Previews */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.grid-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.grid-item p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.1);
 }

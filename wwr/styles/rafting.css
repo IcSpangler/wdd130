@@ -449,31 +449,3 @@ padding: 1rem;
   font-size: 1.1em;
   color: #333;
 }
-
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-footer .social-icons {
-  margin-top: 10px;
-}
-
-footer .social-icons a {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-footer .social-icons img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease-in-out;
-}
-
-footer .social-icons img:hover {
-  transform: scale(1.1);
-}

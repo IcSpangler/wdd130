@@ -359,13 +359,12 @@ padding: 1rem;
 }
 
 .team-member img {
-  width: 300px; /* Ajuste conforme necessário */
+  width: 300px; 
   height: auto;
   border-radius: 10px;
   gap: 20px;
 }
 
-/* Alterna as direções */
 .team-member:nth-child(odd) {
   flex-direction: row-reverse;
 }
@@ -382,7 +381,6 @@ padding: 1rem;
 
 /* Call to Action Section */
 .call-to-action {
-  background: url('hero-image.jpg') no-repeat center center/cover;
   text-align: center;
   padding: 60px 20px;
   position: relative;
@@ -410,16 +408,16 @@ padding: 1rem;
 .cta-button {
   display: inline-block;
   padding: 12px 20px;
-  background: #ff6600;
+  background: var(--accent1-color);
   color: white;
   font-size: 1.2em;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s;
+
 }
 
 .cta-button:hover {
-  background: #cc5500;
+  background: var(--accent1-color);
 }
 
 /* Grid Layout for Trip Previews */

@@ -591,7 +591,7 @@ padding: 1rem;
   justify-content: space-between;
   max-width: 1100px;
   margin: auto;
-  gap: 40px;
+  gap: 50px;
 }
 
 .safety-text {
@@ -616,13 +616,13 @@ padding: 1rem;
 }
 
 .safety-images {
-  width: 60%;
+  width: 70%;
   display: flex;
   gap: 10px;
 }
 
 .safety-images img {
-  width: 48%;
+  width: 50%;
   border-radius: 10px;
 }
 .safety-text2 ul {
@@ -634,8 +634,12 @@ padding: 1rem;
   font-size: 1rem;
   padding: 5px 0;
   color: #666;
-  width: 50%;
   text-align: right;
+}
+.safety-text2 p {
+  font-size: medium;
+  text-align: right;
+  padding-top: 1rem;
 }
 
 /* Responsive Design */

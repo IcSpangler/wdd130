@@ -398,11 +398,13 @@ padding: 1rem;
 .call-to-action .title {
   font-size: 2em;
   margin-bottom: 15px;
+  color: white;
 }
 
 .call-to-action p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: var(--accent2-color);
 }
 
 .cta-button {

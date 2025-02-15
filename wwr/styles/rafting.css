@@ -262,7 +262,7 @@ footer {
 /*Contact Us page*/
 .contact-header {
   padding: 30px;
-  background:var(--primary-color)
+  background:white
 }
 .contact-options {
   display: flex;

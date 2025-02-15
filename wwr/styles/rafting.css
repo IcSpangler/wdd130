@@ -447,3 +447,85 @@ padding: 1rem;
   font-size: 1.1em;
   color: #333;
 }
+
+/*TRIPS PAGE*/
+.hero-trips{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #f9f9f9;
+
+}
+.h-trips-text {
+  max-width: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: black;
+}
+.h-trips-text p {
+  font-size: 1rem;
+  margin: 15px 0;
+  color: #666;
+  padding: 1rem;
+  }
+
+.h-trips-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.primary {
+  background: black;
+  color: white;
+}
+
+.btn.secondary {
+  border: 2px solid black;
+  color: black;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px;
+  background: white;
+}
+
+.feature {
+  width: 30%;
+}
+
+.feature img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.feature p {
+  color: #666;
+}
